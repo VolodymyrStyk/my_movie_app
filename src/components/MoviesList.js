@@ -3,7 +3,7 @@ import '../styleComponents/MoviesList.css'
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllMoviesRequest} from "../services";
-import {Navigation} from "./Navigation";
+import {PaginationNav} from "./PaginationNav";
 import {Link, useRouteMatch} from "react-router-dom";
 
 export const MoviesList = () => {
@@ -14,23 +14,24 @@ export const MoviesList = () => {
     useEffect(() => {
         getAllMoviesRequest(dispatch);
     }, [])
+
     return (
         <div>
             <div className={'movies-list'}>
                 {
 
                     appData.results?.map((movie) => (
-                        <Link key={movie.id} to={
+                        <Link to={
                             {
                                 pathname: `${url}/${movie.id}`,
-                                state: movie
+                                state: movie,
                             }}>
                             <MoviesListCard data={movie}/>
                         </Link>
                     ))
                 }
             </div>
-            <Navigation currentPage={appData?.page} totalPages={appData?.total_pages}/>
+            <PaginationNav currentPage={appData?.page} totalPages={appData?.total_pages}/>
         </div>
     );
 }

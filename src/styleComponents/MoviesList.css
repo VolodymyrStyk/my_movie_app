@@ -33,3 +33,16 @@
 .movie-page-info{
     padding: 10px;
 }
+.pagination-component{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination-component ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.pagination-component ul li{
+    margin: 15px;
+}

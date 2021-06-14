@@ -18,7 +18,7 @@ export const HeaderGenres = () => {
         <div>
             <select onChange={chooseGenre}>
                 {
-                    genres?.map(genre => <option value={genre.id}>{genre?.name}</option>)
+                    genres?.map(genre => <option key={genre.id} value={genre.id}>{genre?.name}</option>)
                 }
             </select>
         </div>

@@ -2,7 +2,7 @@ import './App.css';
 import {MoviesList} from "./components/MoviesList";
 import {Header} from "./components/Header";
 import {
-    BrowserRouter as Router, Link,
+    BrowserRouter as Router,
     Route, Switch
 } from "react-router-dom";
 import {Movie} from "./components/Movie";
