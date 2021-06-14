@@ -9,7 +9,7 @@ import {Link, useRouteMatch} from "react-router-dom";
 export const MoviesList = () => {
     let {url} = useRouteMatch();
     const data = useSelector(state => state);
-    const {appData, page} = data;
+    const {appData} = data;
     const dispatch = useDispatch();
     useEffect(() => {
         getAllMoviesRequest(dispatch);
@@ -20,7 +20,7 @@ export const MoviesList = () => {
                 {
 
                     appData.results?.map((movie) => (
-                        <Link  key={movie.id} to={
+                        <Link key={movie.id} to={
                             {
                                 pathname: `${url}/${movie.id}`,
                                 state: movie
@@ -30,7 +30,7 @@ export const MoviesList = () => {
                     ))
                 }
             </div>
-            <Navigation page={appData?.page}/>
+            <Navigation currentPage={appData?.page} totalPages={appData?.total_pages}/>
         </div>
     );
 }

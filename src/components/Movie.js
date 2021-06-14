@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getChosenMovie} from "../services/getChosenMovie";
+import {getChosenMovie} from "../services";
 import {MoviePoster} from "./MoviePoster";
 import {API_GET_MOVIE_POSTER, NO_POSTER} from "../actionTypesAPI";
 import {MovieInfo} from "./MovieInfo";
@@ -13,7 +13,7 @@ export const Movie = ({match: {params: {id}}}) => {
     useEffect(() => {
         getChosenMovie(id, dispatch);
     }, []);
-    console.log(currentMovie);
+
     const {
         budget,
         genres,
@@ -30,9 +30,7 @@ export const Movie = ({match: {params: {id}}}) => {
     let imagSrc = API_GET_MOVIE_POSTER + poster_path;
     if (!poster_path) {
         imagSrc = NO_POSTER;
-        console.log('no')
     }
-
 
     return (
         <div className={'movie-page'}>
