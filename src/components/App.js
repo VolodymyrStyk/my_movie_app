@@ -2,13 +2,17 @@ import './App.css';
 import {BrowserRouter, Route} from "react-router-dom";
 import {MoviesList} from "./moviesList/MoviesList";
 import "./App.css"
+import {Switch} from "@material-ui/core";
 
 function App() {
 
     return (
         <BrowserRouter>
             <div className={'container'}>
-                <Route path={'/'} component={MoviesList}/>
+                <Switch>
+                    <Route path={'/movie'} component={MoviesList}/>
+                    <Route path={'/movie/:id'} component ={}/>
+                </Switch>
             </div>
         </BrowserRouter>
     );
