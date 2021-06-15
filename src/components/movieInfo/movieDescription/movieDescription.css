@@ -1,0 +1,17 @@
+.movie-description{
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.movie-description h2{
+    margin-top: 0;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+

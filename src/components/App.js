@@ -1,17 +1,22 @@
 import './App.css';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, Switch,Redirect} from "react-router-dom";
 import {MoviesList} from "./moviesList/MoviesList";
 import "./App.css"
-import {Switch} from "@material-ui/core";
+import {MovieInfo} from "./movieInfo/MovieInfo";
+import {ErrorMovies} from "./moviesList/ErrorMovies";
+import {Header} from "./header/Header";
 
 function App() {
 
     return (
         <BrowserRouter>
             <div className={'container'}>
+                <Header/>
                 <Switch>
-                    <Route path={'/movie'} component={MoviesList}/>
-                    <Route path={'/movie/:id'} component ={}/>
+                    <Route exact path={'/movies'} component={MoviesList}/>
+                    <Route path={'/movies/:id'} component={MovieInfo}/>
+                    <Route exact path={'/error'} componet ={ErrorMovies}/>
+                    <Redirect to={'/movies'}/>
                 </Switch>
             </div>
         </BrowserRouter>

@@ -71,3 +71,10 @@
     border: 2px solid gray;
     font-weight: bold;
 }
+.error-component{
+    text-align: center;
+}
+.error-component-text{
+    font-size: 20px;
+    color: red;
+}
