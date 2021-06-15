@@ -1,0 +1,17 @@
+.movies-list-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid lightgray;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.list-card-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}

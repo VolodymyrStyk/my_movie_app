@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1080px;
+}
+/**/
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.movie-page{
+    display: flex;
+}
+.movie-page-poster{
+    padding: 10px;
+}
+.movie-page-poster h3,.movie-page-info h2{
+    margin-top: 0;
+}
+.movie-page-info{
+    padding: 10px;
+}
+.pagination-component{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination-component ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.pagination-component ul li{
+    margin: 15px;
+}

@@ -1,17 +1,16 @@
 import './App.css';
-import {MoviesList} from "./backUp/components/MoviesList";
-import {Header} from "./backUp/components/Header";
-import {
-    BrowserRouter as Router,
-    Route, Switch
-} from "react-router-dom";
-import {Movie} from "./backUp/components/Movie";
+import {BrowserRouter, Route} from "react-router-dom";
+import {MoviesList} from "./moviesList/MoviesList";
+import "./App.css"
 
 function App() {
+
     return (
-        <div className="App">
-            sdsd
-        </div>
+        <BrowserRouter>
+            <div className={'container'}>
+                <Route path={'/'} component={MoviesList}/>
+            </div>
+        </BrowserRouter>
     );
 }
 
