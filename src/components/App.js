@@ -5,10 +5,16 @@ import "./App.css"
 import {MovieInfo} from "./movieInfo/MovieInfo";
 import {ErrorMovies} from "./moviesList/ErrorMovies";
 import {Header} from "./header/Header";
+import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
 
 function App() {
+    const themes = {
+        light: 'public/light.css',
+        dark: 'dark.css',
+    };
 
     return (
+        <ThemeSwitcherProvider defaultTheme="light" themeMap={themes}>
         <BrowserRouter>
             <div className={'container'}>
                 <Header/>
@@ -20,6 +26,7 @@ function App() {
                 </Switch>
             </div>
         </BrowserRouter>
+        </ThemeSwitcherProvider>
     );
 }
 
