@@ -13,6 +13,7 @@ const intialState = {
     pagesCount: 1,
     isLoadingError:false,
     genres:[],
+    chooseGenre: 0,
 }
 
 export const moviesReducer = (state = intialState, action) => {
@@ -60,4 +61,4 @@ export const setIsLoading = (bool) => ({type: SET_IS_LOADING, payload: bool});
 export const setCurrentPage = (page) => ({type: SET_CURRENT_PAGE, payload: page});
 export const setLoadingError = (bool) => ({type: SET_LOADING_ERROR, payload: bool});
 export const setLoadingNoError = (bool) => ({type: SET_LOADING_NO_ERROR, payload: bool});
-export const setAllGenre = (genre) => ({type: SET_ALL_GENRE, payload: genre});
+export const setAllGenre = (payload) => ({type: SET_ALL_GENRE, payload});

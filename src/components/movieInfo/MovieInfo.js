@@ -9,9 +9,11 @@ import {API_GET_MOVIE_POSTER, NO_POSTER} from "../../redux/reducers/actionTypesA
 export const MovieInfo = (props) => {
     const params = useParams();
     const[movieData,setMovieData] = useState({});
+
     useEffect(() => {
         getCurrentMovie(params.id,setMovieData);
     },[]);
+
     const {
         budget,
         genres,
@@ -24,11 +26,13 @@ export const MovieInfo = (props) => {
         tagline,
         videos
     } = movieData;
+
     let imagSrc = API_GET_MOVIE_POSTER + poster_path;
+
     if (!poster_path) {
         imagSrc = NO_POSTER;
     }
-    console.log(movieData);
+
     return (
         <div>
             <button onClick={() => props.history.goBack()} className={'back-btn'}>back</button>

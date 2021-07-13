@@ -11,4 +11,6 @@ export const getAllMoviesRequest = async (dispatch,  page = '&page=1') => {
     } finally {
 
     }
+
 }
+

@@ -1,24 +1,27 @@
 import './headerGenres.css';
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {getGenres, getMovies} from "../../../redux/reducers/actions/movies";
+import {getGenres, getMoviesByGenre} from "../../../services";
 
 export const HeaderGenres = () => {
     const dispatch = useDispatch();
-    let genres = useSelector(state => state.movies.genres);
-    console.log(genres)
+    let genres = useSelector(state => state.movies.genres.genres);
+
     useEffect(() => {
-        getGenres();
+        getGenres(dispatch);
     }, [])
 
-    const chooseGenre = (e) => {
-        const genreId  = e.target.value;
+    let genreId = 0;
 
-        getMovies(genreId);
+
+    const chooseGenre = (e) => {
+        genreId  = e.target.value;
+
+        getMoviesByGenre(dispatch, genreId);
     }
 
     return (
-        <div>
+        <div className={"select-css"}>
             <select onChange={chooseGenre}>
                 {
                     genres?.map(genre => <option key={genre.id} value={genre.id}>{genre?.name}</option>)
