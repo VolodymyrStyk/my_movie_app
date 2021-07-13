@@ -1,7 +1,14 @@
-.movie-title{
-
+.title-img{
+height: 50px;
 }
-.title-conteiner{
-    text-decoration-style: dashed;
-
+.title-conteiner span{
+    padding-left: 10px;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+}
+.title-conteiner div{
+    display:flex;
+    justify-items: center;
+    align-items: center;
 }

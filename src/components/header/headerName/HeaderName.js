@@ -5,7 +5,7 @@ export const HeaderName = () => {
   return (
       <div className={'title-conteiner'}>
           <Link to="/movies">
-              <div><img src="public/" alt=""/><span className={'movie-title'}>My Movies App</span></div>
+              <div><img src="./camera.png" alt="" className={'title-img'}/><span className={'movie-title'}>My Movies App</span></div>
           </Link>
       </div>
   );
