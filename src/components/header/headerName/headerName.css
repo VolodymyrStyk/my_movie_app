@@ -12,3 +12,6 @@ height: 50px;
     justify-items: center;
     align-items: center;
 }
+img{
+    border-radius: 50%;
+}
