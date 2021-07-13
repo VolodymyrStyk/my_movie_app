@@ -6,7 +6,9 @@ import StarRatings from "react-star-ratings";
 
 export const MoviesListCard = ({movie}) => {
     const {title,vote_average,poster_path} = movie;
+
     let imagSrc = API_GET_MOVIE_POSTER + poster_path;
+
     if (!poster_path){
         imagSrc = NO_POSTER;
     }

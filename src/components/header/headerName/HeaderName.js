@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 
 export const HeaderName = () => {
   return (
-      <div>
+      <div className={'title-conteiner'}>
           <Link to="/movies">
-              <div>My Movies App</div>
+              <div><img src="public/" alt=""/><span className={'movie-title'}>My Movies App</span></div>
           </Link>
       </div>
   );

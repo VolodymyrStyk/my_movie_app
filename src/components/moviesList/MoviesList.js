@@ -22,6 +22,7 @@ export const MoviesList = (props) => {
     const isLoadingError = useSelector(state => state.movies.isLoadingError);
     const [searchValue, setSearchValue] = useState('');
     const pages = [];
+
     createPages(pages, pagesCount, currentPage)
 
     useEffect(() => {
