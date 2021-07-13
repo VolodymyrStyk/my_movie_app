@@ -1,4 +1,4 @@
-import {API_GET_ALL_GENRE} from "../actionTypesAPI";
+import {API_GET_ALL_GENRE} from "../redux/reducers/actionTypesAPI";
 import {SET_ALL_GENRE} from "../redux";
 
 export const getGenres = async (dispatch) => {

@@ -1,7 +1,7 @@
 import {useState} from "react";
-import {getAllMoviesRequest, searchMoviesRequest} from "../services";
+import {getAllMoviesRequest, searchMoviesRequest} from "../../services";
 import {useDispatch, useSelector} from "react-redux";
-import {SET_SEARCH_TERM} from "../redux";
+import {SET_SEARCH_TERM} from "../../redux";
 
 export const HeaderSearch = () => {
     const dispatch = useDispatch();

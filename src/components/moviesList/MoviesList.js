@@ -2,8 +2,8 @@ import './moviesList.css';
 import {MoviesListCard} from "./moviesListCard/MoviesListCard";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
-import {getMovies} from "../../reducers/actions/movies";
-import {setCurrentPage} from "../../reducers/moviesReducer";
+import {getMovies} from "../../redux/reducers/actions/movies";
+import {setCurrentPage} from "../../redux/reducers/moviesReducer";
 import {createPages} from "../../utils/pagesCreator";
 import React from "react";
 import {

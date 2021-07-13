@@ -1,5 +1,5 @@
 import './moviesListCard.css'
-import {API_GET_MOVIE_POSTER, NO_POSTER} from "../../../reducers/actionTypesAPI";
+import {API_GET_MOVIE_POSTER, NO_POSTER} from "../../../redux/reducers/actionTypesAPI";
 import {PosterPreview} from "./posterPreview/PosterPreview";
 import StarRatings from "react-star-ratings";
 

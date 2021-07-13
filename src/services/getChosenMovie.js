@@ -1,4 +1,4 @@
-import {API_KEY} from "../actionTypesAPI";
+import {API_KEY} from "../redux/reducers/actionTypesAPI";
 import {SET_CURRENT_MOVIE} from "../redux";
 
 

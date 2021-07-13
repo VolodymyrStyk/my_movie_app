@@ -1,4 +1,4 @@
-import {API_GET_ALL_MOVIES} from "../actionTypesAPI";
+import {API_GET_ALL_MOVIES} from "../redux/reducers/actionTypesAPI";
 import {SET_MOVIES} from "../redux";
 
 export const getAllMoviesRequest = async (dispatch,  page = '&page=1') => {

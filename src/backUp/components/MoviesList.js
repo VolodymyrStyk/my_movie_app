@@ -2,7 +2,7 @@ import {MoviesListCard} from "./MoviesListCard";
 import '../styleComponents/MoviesList.css'
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getAllMoviesRequest} from "../services";
+import {getAllMoviesRequest} from "../../services";
 import {PaginationNav} from "./PaginationNav";
 import {Link, useRouteMatch} from "react-router-dom";
 

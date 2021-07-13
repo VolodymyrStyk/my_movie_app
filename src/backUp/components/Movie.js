@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getChosenMovie} from "../services";
+import {getChosenMovie} from "../../services";
 import {MoviePoster} from "./MoviePoster";
 import {API_GET_MOVIE_POSTER, NO_POSTER} from "../actionTypesAPI";
 import {MovieInfo} from "./MovieInfo";

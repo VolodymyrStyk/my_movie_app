@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {getGenres} from "../services";
-import {getMoviesByGenre} from "../services/getMoviesByGenre";
+import {getGenres} from "../../services";
+import {getMoviesByGenre} from "../../services";
 
 export const HeaderGenres = () => {
     const dispatch = useDispatch();

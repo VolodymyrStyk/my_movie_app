@@ -1,10 +1,10 @@
 import './movieInfo.css'
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {getCurrentMovie} from "../../reducers/actions/movies";
+import {getCurrentMovie} from "../../redux/reducers/actions/movies";
 import {MoviePoster} from "./moviePoster/MoviePoster";
 import {MovieDescription} from "./movieDescription/MovieDescription";
-import {API_GET_MOVIE_POSTER, NO_POSTER} from "../../reducers/actionTypesAPI";
+import {API_GET_MOVIE_POSTER, NO_POSTER} from "../../redux/reducers/actionTypesAPI";
 
 export const MovieInfo = (props) => {
     const params = useParams();

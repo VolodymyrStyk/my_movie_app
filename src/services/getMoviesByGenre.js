@@ -1,4 +1,4 @@
-import { API_KEY} from "../actionTypesAPI";
+import { API_KEY} from "../redux/reducers/actionTypesAPI";
 import {SET_MOVIES} from "../redux";
 
 export const getMoviesByGenre = async (dispatch, genreId) => {

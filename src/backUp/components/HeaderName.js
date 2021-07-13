@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {getAllMoviesRequest} from "../services";
+import {getAllMoviesRequest} from "../../services";
 
 export const HeaderName = () => {
     const dispatch = useDispatch();

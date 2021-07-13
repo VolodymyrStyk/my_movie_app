@@ -48,7 +48,7 @@ export const getGenres = async (dispatch) => {
         const response = await axios.get(API_GET_ALL_GENRE);
         const payload = await response.data;
         console.log(payload)
-        dispatch(setAllGenre(payload))
+        dispatch(setAllGenre(payload));
     } catch (e) {
         console.log(e);
     }

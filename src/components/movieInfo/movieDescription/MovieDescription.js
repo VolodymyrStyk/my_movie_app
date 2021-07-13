@@ -1,4 +1,4 @@
-import {YOUTUBE} from "../../../backUp/actionTypesAPI";
+import {YOUTUBE} from "../../../redux/reducers/actionTypesAPI";
 import './movieDescription.css';
 export const MovieDescription = ({title, overview, release, runtime, tagline,videos}) => {
     return (
